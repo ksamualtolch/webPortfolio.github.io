@@ -105,19 +105,38 @@
 	   height: 500px;
 	   margin-top: 50px;
 	   margin-bottom: 10px;
-	   /*-webkit-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
-
  }
 
 hr {
 	width: 85%;
 }
 
-footer p {
-	border: 2px solid pink;
+.copyright {
+	border: 7px solid rgba(162, 244, 11, 1);
+	border-radius: 50px;
+	padding: 8px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	margin: 10px;
+	margin-bottom: 3px;
+	text-align: center;
+}
+
+footer {
+	text-align: center;
+}
+
+footer p:nth-of-type(2) {
+	font-family: "OCR a Std";
+	border-radius: 50px;
 	padding: 10px;
-	float: right;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	display: inline;
+	margin: 0;
+*//*	float: right;
+	display: block;
+
 }
 
  .mapBorder {
