@@ -34,9 +34,8 @@ ul > li {
 
 #map {
    width: 100%;
-   height: 500px;
+   height: 400px;
    margin-top: 0;
-   margin-bottom: 10px;
  }
 
 .widget {
@@ -74,6 +73,23 @@ hr {
 .navbar-default .navbar-nav > li > a:active{
 	color: rgb(57, 225, 34);
 	background-color: yellow;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color: white;
+   	border-radius: 10px;
+   	background: rgba(0, 69, 92, 1);;
+   	font-family: 'Share Tech', sans-serif;
+   	box-shadow: 0px 0px 130px rgba(0, 69, 92, 1);
+   	text-transform: uppercase;
+   	transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: rgba(0, 69, 92, 1);
+    font-family: 'Share Tech', sans-serif;
+    text-transform: uppercase;
 }
 
 /*end navbar*/
@@ -146,10 +162,6 @@ hr {
     background-size: cover;
 }
 
-#about p {
-	/*text-align: right;*/
-}
-
 .about p {
 	font-family: "Courier New";
 	color: white;
@@ -166,6 +178,7 @@ hr {
 	padding-left: 50px;
 	padding-top: 15px;
 	padding-right: 30px;
+	margin-bottom: 50px;
 }
 
 .aboutBorder {
@@ -179,8 +192,8 @@ hr {
     -webkit-text-stroke-color: none;
 	color: white;
 	font-family: 'Share Tech', sans-serif;
-	/*text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);*/
 }
+
 /*end about*/
 
 
@@ -191,15 +204,12 @@ hr {
 .logo {
 	padding-bottom: 25px;
 	margin-top: 15px;
-
 }
 
 .logo img {
 	width: 100%;
 	padding-top: 5px;
 	margin-bottom: 10px;
-	/*-webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19);*/
 }
 
 /*end logo*/
@@ -381,8 +391,7 @@ hr {
 
 .contact:first-of-type {
 	background-image: url("../img/stripes2.jpg");
-/*	background-color: rgba(0, 69, 92, 1);
-*/	font-size: 20px;
+	font-size: 20px;
 	min-height: 400px;
 	height: 100%;
 	padding: 0px;
@@ -390,9 +399,16 @@ hr {
 	position: relative;
 }
 
+
+.testimonials {
+	background-color: rgba(121, 248, 252, 1);
+	min-height: 400px;
+	height: 100%;
+} 
+
+
 .contact:nth-of-type(2) {
-/*	background-image: url("../img/tartan.jpg");
-*/	background-color: rgba(121, 248, 252, 1);
+	background-color: rgba(121, 248, 252, 1);
 	min-height: 400px;
 	height: 100%;
 }
@@ -400,8 +416,6 @@ hr {
 .glowBorder {
 	position: absolute;
 	border: 10px solid rgba(255, 255, 255, .8);
-	/*border-right: 3px solid rgba(162, 244, 11, .5);
-	border-left: 3px solid rgba(162, 244, 11, .5);*/
 	border-radius: 50px;
 	width: 80%;
 	height: 80%;
@@ -411,24 +425,6 @@ hr {
 	margin-right: auto;
 	margin-top: 30px;
 	box-shadow: 0px 0px 130px rgba(162, 244, 11, .8);
-}
-
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-    color: white;
-   	border-radius: 10px;
-   	background: rgba(0, 69, 92, 1);;
-   	font-family: 'Share Tech', sans-serif;
-   	box-shadow: 0px 0px 130px rgba(0, 69, 92, 1);
-   	/*box-shadow: 0px 0px 130px rgba(162, 244, 11, .8);*/
-   	text-transform: uppercase;
-   	transition: all 0.5s;
-    -webkit-transition: all 0.5s;
-}
-
-.navbar-default .navbar-nav > li > a {
-    color: rgba(0, 69, 92, 1);
-    font-family: 'Share Tech', sans-serif;
-    text-transform: uppercase;
 }
 
 .contactUs {
