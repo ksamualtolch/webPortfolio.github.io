@@ -15,10 +15,32 @@ body {
 }
 
 .adjective {
+	font-family: 'Share Tech', sans-serif;
 	text-transform: uppercase;
 	background-color: rgba(155, 220, 242, .3);
-	padding: 4px;
+	padding: 8px;
 	border-radius: 7px;
+	line-height: 58px;
+}
+
+
+
+.squareBrackets:before {
+   content: " ";
+   border-left:5px solid white;
+   border-top:5px solid white;
+   border-bottom:5px solid white;
+   margin-right:10px;
+  padding:10px 5px 10px 5px;
+}
+.squareBrackets:after
+{
+  content:" ";
+  padding:10px 5px 10px 5px;
+  border-right:5px solid white;
+  border-top:5px solid white;
+  border-bottom:5px solid white;
+  margin-left:10px;
 }
 
 ul {
@@ -43,13 +65,9 @@ ul > li {
 	padding: 20px;
 }
 
-hr {
-	width: 85%;
-}
-
-@media (min-width: 1500px) {
+@media (min-width: 1650px) {
   .container {
-    width: 1500px;
+    width: 1650px;
   }
 }
 
@@ -168,6 +186,7 @@ hr {
 	min-height: 400px;
 	height: 100%;
 	padding: 10px;
+	border-left: 10px solid white;
 }
 
 .statsBoxRight {
@@ -198,6 +217,13 @@ hr {
 
 }
 
+#circle {
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+
 /*end stats*/
 
 
@@ -205,30 +231,89 @@ hr {
 /*about*/
 
 #about {
-	background: url("../img/aboutBackground.png");
+	/*background: url("../img/aboutBackground.png");
 	-webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    border: 5px solid white;*/
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#028ac9+0,02fdff+25,ffffff+65 */
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#028ac9+0,02fdff+17,ffffff+39 */
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#028ac9+0,02fdff+17,ffffff+39 */
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0168b7+4,02a9f7+17,ffffff+39 */
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#aedce8+4,ffffff+39 */
+background: #aedce8; /* Old browsers */
+background: -moz-linear-gradient(top, #aedce8 4%, #ffffff 39%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #aedce8 4%,#ffffff 39%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #aedce8 4%,#ffffff 39%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aedce8', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+    padding-top: 30px;
 }
+
 
 .about p {
-	font-family: "Courier New";
-	color: white;
-	font-size: 20px;
-	padding-top:5px;
-	padding-bottom: 2px;
+	display: inline;
 }
 
+.about p:first-of-type {
+	font-family: 'Share Tech', sans-serif;
+	color: white;
+	font-size: 20px;
+	padding-top:0;
+	padding-bottom: 2px;
+	margin-left: 20px;
+	display: block;
+
+}
+
+.tree .fa{
+	border: 1px solid red;
+	color: rgba(3, 68, 57, 1);
+	z-index: 1;
+	font-size: 100px;
+}
+
+
 .about p:nth-of-type(2) {
-	padding-bottom: 10px;
+	margin-left: 20px;
+}
+
+.blueBlock, .redBlock, .glowBlock {
+	font-family: 'Share Tech', sans-serif;
+	color: white;
+	font-size: 4em;
+	background: rgb(121,248,252);
+	margin-top: 0px;
+	width: 90%;
+	margin: 5px;
+}
+
+.redBlock {
+	background-color: rgb(236, 19, 192);
+	padding: 5px;
+}
+
+.glowBlock {
+	background-image: url("../img/stripes2.jpg");
+	border: 10px solid rgba(255, 255, 255, .8);
+	border-radius: 50px;
+	margin: 10px;
+	margin-top: 20px;
+	box-shadow: 0px 0px 130px rgba(162, 244, 11, .8);
+	padding: 10px;
+	/*padding-right: 10px;
+	padding-left: 10px;*/
 }
 
 .about {
-	padding-left: 50px;
+	padding-left: 30px;
 	padding-top: 15px;
 	padding-right: 30px;
-	margin-bottom: 50px;
+	margin-bottom: 0px;
+	margin-top: 20px;
+	-webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	background-color: rgba(174, 220, 232, 1);
 }
 
 .aboutBorder {
@@ -237,7 +322,7 @@ hr {
 
 .about h2 {
 	text-transform: uppercase;
-	font-size: 24px;
+	font-size: 44px;
 	-webkit-text-stroke-width: .5px;
     -webkit-text-stroke-color: none;
 	color: white;
@@ -246,8 +331,31 @@ hr {
 
 /*end about*/
 
+.style21 {
+  border: 6px solid #eeedef;
+  border-top-width: 1px;
+  height: 0;
+  margin: 0px auto;
+  clear: both;
+  display: block;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
 
-
+.style21:after { /* Center graphic */
+  content:url(http://lorempixel.com/output/technics-q-c-50-50-8.jpg);
+  display:block;
+  position:absolute;
+  left:50%;
+  height:50px;
+  width:50px;
+  margin:-25px 0 0 -25px;
+  border-radius:50px;
+  border: 3px solid white;
+  overflow:hidden;
+  box-shadow: 0 0 0 1px #eef, 0 0 5px;
+}
 
 /*logo*/
 
@@ -460,7 +568,7 @@ hr {
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 30px;
-	box-shadow: 0px 0px 130px rgba(162, 244, 11, .8);
+	box-shadow: 0px 0px 130px rgba(196, 231, 205, .8);
 }
 
 .contactUs {
@@ -541,6 +649,11 @@ footer p:nth-of-type(2) {
 
 /*end navbar customize*/
 
+
+.arrowDown {
+	border-top: 3px solid blue;
+	text-align: center;
+}
 
 
 /*bounce animation*/
