@@ -12,6 +12,7 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    overflow: hidden;
 }
 
 .adjective {
@@ -214,6 +215,14 @@ hr {
 	margin-bottom: 10px;
 }
 
+.logo p {
+	font-weight: bold;
+	font-size: 3em;
+	color: white;
+	text-align: center;
+	font-family: 'Share Tech', sans-serif;
+}
+
 /*end logo*/
 
 
@@ -245,6 +254,25 @@ hr {
 
 .phone a {
 	float: left;
+}
+
+.contactUsLink a {
+	color: white;
+	background-color: rgba(0, 114, 153, .5);
+	padding: 6px;
+	margin-right: 0;
+	border-radius: 7px;
+	text-decoration: none;
+}
+
+.contactUsLink a:hover {
+	color: rgba(0, 69, 92, 1);
+	background-color: rgba(155, 220, 242, .3);
+	transition: all 0.3s ease 0s;
+}
+
+.contactUsLink a:active {
+	background-color: rgba(236, 19, 192, 1);
 }
 
 /*end contact*/
