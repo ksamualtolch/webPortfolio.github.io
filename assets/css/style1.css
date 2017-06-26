@@ -21,12 +21,12 @@ body {
 	border-radius: 7px;
 }
 
-ul {
+/*ul {
 	text-align: center;
 	margin: 0;
 	margin-top: 140px;
 	padding: 0;
-}
+}*/
 
 ul > li {
 	display: inline-block;
@@ -34,7 +34,7 @@ ul > li {
 
 #map {
    width: 100%;
-   height: 600px;
+   height: 400px;
    margin-top: 0;
  }
 
@@ -78,8 +78,9 @@ hr {
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
     color: white;
    	border-radius: 10px;
-   	background: rgba(0, 69, 92, 1);
+   	background: rgba(0, 69, 92, 1);;
    	font-family: 'Share Tech', sans-serif;
+   	-webkit-appearance: none;
    	box-shadow: 0px 0px 130px rgba(0, 69, 92, 1);
    	-webkit-box-shadow: 0px 0px 130px rgba(0, 69, 92, 1);
    	text-transform: uppercase;
@@ -107,7 +108,7 @@ hr {
 
 .portfolioImage {
 	/*border: 3px solid rgba(162, 244, 11, .8);*/
-	margin: 30px;
+	margin: 10px;
     position: relative;
     -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -148,57 +149,8 @@ hr {
     opacity: 1;
 }
   
-.portfolio p {
-	width: 90%;
-	padding: 20px;
-	font-size: 20px;
-	border: 3px solid black;
-	margin: 0 auto;
-	margin-bottom: 60px;
-	font-family: 'Share Tech', sans-serif;
-	-webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
 /*end portfolio*/
 
-/*stats*/
-
-.statsBox {
-	background-color: rgba(121, 248, 252, 1);
-	min-height: 400px;
-	height: 100%;
-	padding: 10px;
-}
-
-.statsBoxRight {
-	padding: 5px;
-	border: 1px solid red;
-}
-
-.counter-value {
-	color: white;
-	font-size: 35px;
-	margin: 0 auto;
-	text-align: center;
-	border:7px solid rgba(0, 69, 92, 1);
-	width: 175px;
-	min-width: 150px;
-	padding: 30px;
-	font-family: 'Share Tech', sans-serif;
-	border-radius: 60px;
-	box-shadow: 10px 10px 10px rgba(162, 244, 11, .8);
-}
-
-#counter p {
-	text-align: center;
-	margin: 10px;
-	margin-bottom: 0;
-	font-size: 2em;
-	font-family: 'Share Tech', sans-serif;
-
-}
-
-/*end stats*/
 
 
 
@@ -447,6 +399,30 @@ hr {
 	padding: 0px;
 	margin: 0;
 	position: relative;
+	border-top: 6px solid white;
+	border-right: 16px solid white;
+	-moz-box-shadow:    inset 15px 5px 40px rgba(0, 69, 92, 1);
+	-webkit-box-shadow: inset 15px 5px 40px rgba(0, 69, 92, 1);
+   	box-shadow:         inset 15px 15px 40px rgba(0, 69, 92, 1);
+}
+
+
+.testimonials {
+	background-color: rgba(121, 248, 252, 1);
+	min-height: 400px;
+	height: 100%;
+} 
+
+
+.contact:nth-of-type(2) {
+	background-color: rgba(0, 114, 153, 1);
+	min-height: 400px;
+	height: 100%;
+	border-top: 6px solid white;
+	border-left: 16px solid white;
+	-moz-box-shadow:    inset 15px 5px 40px rgba(0, 69, 92, 1);
+	-webkit-box-shadow: inset 15px 5px 40px rgba(0, 69, 92, 1);
+   	box-shadow:         inset 15px 15px 40px rgba(0, 69, 92, 1);
 }
 
 .glowBorder {
@@ -460,7 +436,7 @@ hr {
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 30px;
-	box-shadow: 0px 0px 130px rgba(162, 244, 11, .8);
+	box-shadow: 0px 0px 130px rgba(206, 226, 229, .8);
 }
 
 .contactUs {
@@ -482,6 +458,42 @@ p .fa {
 	margin: 0 auto;
 }
 
+.testamonial {
+	font-size: 18px;
+}
+
+.review {
+	font-family: 'Share Tech', sans-serif;
+	font-size: 20px;
+	margin: 0 auto;
+	text-align: center;
+	padding: 40px;
+	padding-bottom: 0;
+	color: white;
+	margin-top: 30px;
+}
+
+li .fa {
+	color: rgba(121, 248, 252, 1);
+	text-shadow: 0px 20px 10px rgba(162, 244, 11, .3);
+	margin-bottom: 30px;
+}
+
+.stars {
+	text-align: center;
+	margin: 0;
+	margin-top: 70px;
+	padding: 0;
+}
+
+.name{
+	color: white;
+	float: right;
+	margin-right: 30px;
+	margin-top: 10px;
+	font-style: italic;
+}
+
 /*end contact boxes*/
 
 
@@ -489,7 +501,11 @@ p .fa {
 /*footer*/
 
 footer {
-	text-align: center;
+	text-align: center; 
+}
+
+footer ul {
+	margin-bottom: 20px;
 }
 
 footer p:nth-of-type(2) {
@@ -500,16 +516,6 @@ footer p:nth-of-type(2) {
 	padding-bottom: 5px;
 	display: inline;
 	margin: 0;
-}
-
-.copyright {
-	border: 8px solid rgba(162, 244, 11, 1);
-	border-radius: 50px;
-	padding: 8px;
-	padding-top: 3px;
-	padding-bottom: 3px;
-	margin: 5px;
-	text-align: center;
 }
 
 .logoCredit {
